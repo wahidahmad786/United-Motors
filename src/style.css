@@ -45,7 +45,7 @@ body{background:var(--paper);color:var(--ink);overflow-x:clip}
 @media(prefers-reduced-motion:reduce){.hero .eyebrow i,.image-stamp{animation:none}.button:before{display:none}}
 
 /* Completed project videos use portrait source footage and load only on request. */
-.projects-section{background:#111b24;color:#f5f4f0;overflow:hidden}
+.projects-section{background:#111b24;color:#f5f4f0;overflow:hidden;padding-top:82px;padding-bottom:82px}
 .projects-heading{display:grid;grid-template-columns:1fr minmax(250px,.7fr);gap:40px;align-items:end;margin-bottom:30px}
 .projects-heading .eyebrow{color:#9eacb8}
 .projects-heading h2{font:500 clamp(38px,5vw,64px)/.98 var(--display);letter-spacing:-2px;margin:18px 0 0}
@@ -93,6 +93,7 @@ body{background:var(--paper);color:var(--ink);overflow-x:clip}
 .project-player{display:block;width:auto;max-width:100%;height:min(68dvh,720px);aspect-ratio:9/16;background:#000;object-fit:contain}
 .project-video-status{min-height:0;color:#ffb19a;font-size:12px;line-height:1.5;margin:8px 0 0;text-align:center}
 @media(max-width:780px){
+  .projects-section{padding-top:62px;padding-bottom:62px}
   .projects-heading{grid-template-columns:1fr;gap:14px;margin-bottom:22px}
   .projects-heading h2{font-size:clamp(37px,9vw,52px);letter-spacing:-1.5px;margin-top:13px}
   .projects-heading>p{font-size:12px;line-height:1.7}
