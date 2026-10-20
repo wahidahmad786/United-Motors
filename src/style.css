@@ -43,3 +43,27 @@ body{background:var(--paper);color:var(--ink);overflow-x:clip}
 @media(max-width:780px){.site-header,.site-header.inner-header,.site-header.scrolled{height:70px;padding:0 6vw}.site-header.over-hero:not(.scrolled){background:linear-gradient(180deg,rgba(10,17,24,.68),transparent)}.site-header.inner-header{background:rgba(16,24,32,.98)}.brand-mark{width:39px;height:39px}.main-nav{background:linear-gradient(145deg,#101820,#202831);padding:100px 9vw 50px;transition:transform .42s cubic-bezier(.2,.75,.18,1)}.main-nav>a{font-size:21px;padding:17px 0;border-color:rgba(190,198,206,.16)}.main-nav>a:not(.nav-cta):after{bottom:9px;right:auto;width:0;transition:width .25s}.main-nav>a:not(.nav-cta):hover:after,.main-nav>a.active:after{width:34px}.main-nav .nav-cta{font-size:11px;padding:16px;margin-top:24px}.menu-toggle{background:rgba(16,24,32,.7);border-color:rgba(190,198,206,.42)}.menu-toggle i{width:20px}.hero{height:93svh;min-height:650px}.hero-backdrop{background-image:radial-gradient(ellipse at 75% 36%,rgba(54,88,112,.15),transparent 38%),linear-gradient(90deg,rgba(10,17,24,.84),rgba(10,17,24,.18)),linear-gradient(0deg,rgba(10,17,24,.74),transparent 55%),url('/images/hero-car.jpg');background-position:60% center}.hero-grid{padding:0 8vw}.hero-copy{padding-top:20vh}.hero h1{font-size:clamp(49px,12vw,74px);letter-spacing:-3.2px}.hero-lede{font-size:12px;line-height:1.75}.hero-aside{display:none}.hero-actions{flex-direction:row;align-items:center}.hero-actions .button{height:47px;padding:0 15px;font-size:9px;gap:12px}.scroll-cue{bottom:28px}.section-pad{padding:84px 7vw}.intro-image{box-shadow:12px 12px 0 rgba(102,125,145,.13)}.gallery-grid{gap:10px}.directory-card:hover{transform:none}.final-cta:after{width:210px;height:210px;right:-9%;top:-23%}.contact-location-section{padding:72px 7vw 80px}.location-widget{right:12px;bottom:calc(78px + env(safe-area-inset-bottom))}.mobile-location-bar{min-height:63px;padding:7px 5vw calc(7px + env(safe-area-inset-bottom))}}
 @media(max-width:460px){.brand-mark{width:36px;height:36px}.brand-name{font-size:8.5px}.hero{min-height:620px}.hero-copy{padding-top:18vh}.hero h1{font-size:46px;letter-spacing:-2.8px}.hero-actions{gap:8px}.hero-actions .button{height:43px;padding:0 11px;font-size:8px;gap:8px}.main-nav>a{font-size:19px}.mobile-location-bar{z-index:30}.location-widget{z-index:31}.location-panel{z-index:32}}
 @media(prefers-reduced-motion:reduce){.hero .eyebrow i,.image-stamp{animation:none}.button:before{display:none}}
+
+/* Owner supplied workshop photography. Keep the roadside sign unobstructed. */
+.hero-backdrop{display:block;background:#111820;transform:none;animation:none;filter:none}
+.hero-backdrop img{position:absolute;top:0;right:0;width:min(50vw,760px);height:100%;object-fit:contain;object-position:right center}
+.hero-backdrop:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#111820 0%,rgba(17,24,32,.82) 40%,transparent 66%),linear-gradient(0deg,rgba(14,19,24,.68),transparent 48%);pointer-events:none}
+.hero:after{display:none}
+.hero-aside{height:100%;margin:0;border:0;display:block}
+.hero-aside:before{display:none}
+.hero-aside .vertical-label{right:2%;top:15%}
+.hero-aside .wheel-display{position:absolute;right:5%;top:auto;bottom:9%;width:132px;transform:none} .hero-aside .wheel-display #wheel-scene{width:132px;height:132px}
+.hero-aside .hero-caption{position:absolute;right:0;bottom:0;padding:0}
+.intro-image img{filter:none;object-position:center 45%}
+@media(max-width:780px){
+  .hero{height:max(820px,100svh);min-height:820px}
+  .hero-backdrop img{top:72px;right:50%;transform:translateX(50%);width:100%;height:44%;object-fit:contain;object-position:center top}
+  .hero-backdrop:after{background:linear-gradient(180deg,rgba(12,18,23,.26),transparent 18%,transparent 45%,rgba(14,20,25,.22) 53%,#111820 68%)}
+  .hero-grid{display:block;height:100%;min-height:inherit;padding:0 8vw}
+  .hero-copy{position:absolute;left:8vw;bottom:88px;width:84vw;padding:0}
+  .hero h1{margin-top:21px}
+  .hero-lede{max-width:450px;margin-bottom:22px}
+  .hero-aside{display:none}
+  .hero-index{display:none}
+  .scroll-cue{bottom:25px}
+}
