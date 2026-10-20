@@ -12,7 +12,7 @@ export const business = {
   serviceArea: 'Dehradun and surrounding areas',
   phone: '+917895988795',
   phoneVerifiedByOwner: false,
-  whatsapp: '', // Keep blank until the owner confirms this number is WhatsApp-enabled.
+  whatsapp: '916395951791', // Owner-supplied WhatsApp number with India country code.
   whatsappMessage: 'Hello United Motors, I found your website and would like to enquire about your car service. Please assist me.',
   email: '',
   address: 'C-15, Turner Road, Opposite Little Stanford School, Dehradun, Uttarakhand 248001, India',
