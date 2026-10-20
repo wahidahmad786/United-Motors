@@ -14,7 +14,7 @@ The production server serves clean routes such as `/services`, `/about`, and `/c
 
 ## Business details to confirm
 
-The address, Google Maps listing, coordinates, Place ID, and phone number were entered from the supplied brief. The owner should confirm each detail, map pin, and call number before launch. The phone is used for tap-to-call but is marked unverified in the structured data until `phoneVerifiedByOwner` is changed to `true`. WhatsApp remains unavailable until the owner separately confirms a WhatsApp-enabled number in `src/config/business.js`. Do not infer WhatsApp availability from a phone number. Add verified hours, email, social accounts, and production domain only when provided by the workshop.
+The address, Google Maps listing, coordinates, Place ID, and call number were entered from the supplied brief. The owner should confirm each detail, map pin, and call number before launch. The call number is used for tap-to-call but is marked unverified in the structured data until `phoneVerifiedByOwner` is changed to `true`. WhatsApp is configured separately using the owner-confirmed WhatsApp number in `src/config/business.js`; do not infer WhatsApp availability from the call number. Add verified hours, email, social accounts, and production domain only when provided by the workshop.
 
 ## Google Maps and Places photos
 
