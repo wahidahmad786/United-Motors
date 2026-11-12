@@ -22,7 +22,7 @@ export const business = {
   directionsUrl: `https://www.google.com/maps/dir/?api=1&destination=${latitude}%2C${longitude}&destination_place_id=${placeId}`,
   embedMapUrl: `https://www.google.com/maps?q=${latitude},${longitude}&z=16&output=embed`,
   social: { instagram: '', facebook: '' },
-  siteUrl: '', // set this when the production domain is known
+  siteUrl: 'https://unitedmotor.netlify.app', // Canonical production URL confirmed by the owner.
   insurancePartners: [],
   ownerPhotosDirectory: '/images/workshop/'
 };
